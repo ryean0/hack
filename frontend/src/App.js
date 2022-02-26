@@ -1,9 +1,11 @@
 import React from 'react'
-import Note from './components/Note'
+import NoteButton from './components/Buttons'
 
 function App() {
   return (
-    <Note />
+    <>
+      <NoteButton />
+    </>
   );
 }
 export default App;
