@@ -1,3 +1,5 @@
+import React from 'react'
+import NoteButton from './components/Buttons'
 import React, { useState, useEffect } from "react";
 import Background from '../src/resources/wallpaper.png';
 import BottleIcon from '../src/resources/bottle.png';
@@ -54,6 +56,7 @@ function App() {
                 </div>
               ))} 
           </div>
+          <NoteButton />
       </div>
   );
 }
