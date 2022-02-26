@@ -1,6 +1,9 @@
+import React from 'react'
+import Note from './components/Note'
+
 function App() {
   return (
-    <h1>Ryan Yeo</h1>
+    <Note />
   );
 }
 export default App;
