@@ -14,7 +14,7 @@ export default function Note() {
 }
 
 function CreateNote() {
-    const [value, setValue] = React.useState('Controlled');
+    const [value, setValue] = React.useState();
   
     const handleChange = (event) => {
       setValue(event.target.value);
@@ -31,6 +31,7 @@ function CreateNote() {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
+            backgroundColor: '#FFFFFF',
             '& .MuiTextField-root': { m: 5, width: '70vw', height: '70vh' },
           }}
           noValidate
@@ -40,6 +41,9 @@ function CreateNote() {
             <TextField
               id="outlined-multiline-static"
               label="Type your message here"
+              value={value}
+              onChange={handleChange}
+              placeholder="Type your message here"
               multiline
               rows={20}
             />
